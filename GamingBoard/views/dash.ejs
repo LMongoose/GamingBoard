@@ -15,17 +15,29 @@
 	</head>
 	<body>
 		<div id="container">
-			<div id="header">
-				
+			<div id="block_dashform">
+				<font color="white"><label for="txtJogador" style="text-align: center; font-family: 'Orbitron';">ID do Jogador:</label></font>
+				<input type="text" class="form-field" id="txtJogador" name="txtJogador" style="width:82px"> <br>
+				<font color="white"><label for="txtJogo" style="text-align: center; font-family: 'Orbitron';">ID do Jogo:</label></font>
+				<input type="text" class="form-field" id="txtJogo" name="txtJogo" style="width:82px">
+				<br>
+				<input type="button" class="button button-modular" value="Visualizar" onclick="javascript:getSteamData()">
 			</div>
-			<div id="sidebar">
-				
+			<div id="block_player" style="display:none;">
+				<font color="white"><label for="txtJogador" style="text-align: center; font-family: 'Orbitron';">Informações do jogador</label></font> <br>
+				<input type="button" class="button button-modular" value="Level" onclick="window.location.href='dash/jogador/level'">
+				<input type="button" class="button button-modular" value="Amigos" onclick="window.location.href='dash/jogador/amigos'">
+				<input type="button" class="button button-modular" value="Grupos"onclick="window.location.href='dash/jogador/grupos'">
+				<input type="button" class="button button-modular" value="Insígnias" onclick="window.location.href='dash/jogador/insignias'">
+				<input type="button" class="button button-modular" value="Conquistas" onclick="window.location.href='dash/jogador/conquistas'">
+				<input type="button" class="button button-modular" value="Estatísticas" onclick="window.location.href='dash/jogador/estatisticas'">
 			</div>
-			<div id="content">
-				
-			</div>
-			<div id="footer">
-				
+			<div id="block_game" style="display:none;">
+				<font color="white"><label for="txtJogador" style="text-align: center; font-family: 'Orbitron';">Informações do jogo</label></font> <br>
+				<input type="button" class="button button-modular" value="Jogadores" onclick="window.location.href='dash/jogo/jogadores'">
+				<input type="button" class="button button-modular" value="Detalhes" onclick="window.location.href='dash/jogo/detalhes'">
+				<input type="button" class="button button-modular" value="Porcentagem Global de Conquistas" onclick="window.location.href='dash/jogo/porcentagemGlobal'">
+				<input type="button" class="button button-modular" value="Estatísticas" onclick="window.location.href='dash/jogo/estatisticas'">
 			</div>
 		</div>
 	</body>

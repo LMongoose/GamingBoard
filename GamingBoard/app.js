@@ -12,16 +12,17 @@ var userStats = new SteamApi.UserStats(apikey);
 var player = new SteamApi.Player(apikey);
 
 // Define o Jogador e o Jogo
+//TODO: pegar dos textfields do dash
 var playerId = "76561198120299407"
 var appId = "620"
 
 // Cria Conexão com o Banco 
 mongoose.connect("mongodb://<gamingboard>:<178%4jkls>@ds117431.mlab.com:17431/gamingboard", { useMongoClient: true });
 
-// Verifica conexão com MongoDB
-var dbMongo = mongoose.connection;
-dbMongo.on("error", console.error.bind(console, "Não foi possível se conectar no MongoDB!"));
-dbMongo.once("open", function(){
+// Verifica conexão com o Banco
+var dbObject = mongoose.connection;
+dbObject.on("error", console.error.bind(console, "Não foi possível se conectar no MongoDB!"));
+dbObject.once("open", function(){
 	console.log("Aplicação conectada no MongoDB");
 });
 
@@ -80,7 +81,7 @@ app.get("/dash/jogador/grupos", function(req, res){
 	});
 })
 
-app.get("/dash/jogador/medalhas", function(req, res){
+app.get("/dash/jogador/insignias", function(req, res){
 	player.GetBadges(playerId).done(function(result){
 		res.send(result);
 	});
@@ -100,7 +101,7 @@ app.get("/dash/jogador/estatisticas", function(req, res){
 
 app.get("/dash/jogo/jogadores", function(req, res){
 	userStats.GetNumberOfCurrentPlayers(appId).done(function(result){
-		res.send("Number of Current Players: " +result);
+		res.send("Número de jogadores online: " +result);
 	});
 })
 
@@ -117,9 +118,9 @@ app.get("/dash/jogo/porcentagemGlobal", function(req, res){
 })
 
 app.get("/dash/jogo/estatisticas", function(req, res){
-	appId = 17740;
+	appId2 = 17740;
 	statsName = ["global.map.emp_isle"];
-	userStats.GetGlobalStatsForGame(appId, statsName).done(function(result){
+	userStats.GetGlobalStatsForGame(appId2, statsName).done(function(result){
 		res.send(result);
 	});
 })

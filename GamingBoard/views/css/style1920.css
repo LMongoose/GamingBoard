@@ -18,8 +18,6 @@ body {
 	position: absolute;
 }
 
-
-
 .form-box {
 	background: url(../img/transparent.png);
 	color: #FFFFFF;
@@ -44,6 +42,41 @@ body {
 
 #div_games {
 	display: none;
+}
+
+#block_dashform {
+	top: 25%;
+	right: 40%;
+	background: url(../img/transparent.png);
+	color: #FFFFFF;
+	border: 1px solid black;
+	height: auto;
+	width: 20%;
+	float: right;
+	position: relative;
+	text-align: center;
+}
+
+#block_player {
+	background: url(../img/transparent.png);
+	color: #FFFFFF;
+	border: 1px solid black;
+	height: auto;
+	width: 20%;
+	float: right;
+	position: relative;
+	text-align: center;
+}
+
+#block_game {
+	background: url(../img/transparent.png);
+	color: #FFFFFF;
+	border: 1px solid black;
+	height: auto;
+	width: 20%;
+	float: right;
+	position: relative;
+	text-align: center;
 }
 
 .form-header {
