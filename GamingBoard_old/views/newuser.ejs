@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style480.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)">
+		<link href="css/style720.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 720px)"/>
+		<link href="css/style1600.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 1600px)"/>
+		<link href="css/style1920.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 1920px)"/>
+		<!--
+			https://lokesh-coder.github.io/pretty-checkbox/
+		-->
+		<link href="css/fonts.css" type="text/css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" type="text/css" rel="stylesheet">
+		<link href="css/materialdesignicons.min.css" media="all" type="text/css" rel="stylesheet"/>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/newuser.js" type="text/javascript"></script>
+		<title>GamingBoard | Novo Usuário</title>
+	</head>
+	<body>
+		<div id="container">
+			<div class="form-box form-newusr">
+				<img src="img/logo.jpg" class="form-header">
+				<form id="form_newusr" action="/create" method="post">
+					<div id="div_newusr">
+						<label for="txtUser" class="form-label">Usuário:</label><br>
+						<input type="text" class="form-field field-user" id="txtUsername" name="txtUsername">
+						<br>
+						<label for="txtEmail" class="form-label">E-Mail:</label><br>
+						<input type="text" class="form-field field-mail" id="txtEmail" name="txtEmail">
+						<br>
+						<label for="txtPass" class="form-label">Senha:</label><br>
+						<input type="password" class="form-field field-pswd" id="txtPassword" name="txtPassword">
+						<br>
+						<label for="txtConfPass" class="form-label">Confirmar a senha:</label><br>
+						<input type="password" class="form-field field-pswd" id="txtConfPass">
+						<br>
+					</div>
+					<input type="button" class="button" id="btn_back" value="Voltar" onclick="window.location.href='login'">
+					<input type="reset" class="button button-modular" value="Limpar">					
+					<input type="submit" class="button" id="btn_next" value="Avançar">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
