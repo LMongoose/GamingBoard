@@ -5,4 +5,5 @@ Aplicativo web de um dashboard para monitoramento de informações dos seus perf
 
 Para Fazer:
 Corrigir o sistema de autenticação (Newuser e Login)
+
 Criar o Dashboard
