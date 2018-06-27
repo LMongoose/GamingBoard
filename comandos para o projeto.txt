@@ -1,20 +1,24 @@
 ﻿// Pode agrupar comandos com ';' em uma linha
 
+======================== ABRIR UM APP EXISTENTE ========================
+
+//Logar no heroku
+
 // configurar user git
 git config --global user.email "lukaspellezario@hotmail.com"
 git config --global user.name "Lucas e Matheus"
 
-// adicionar no heroku
+// Iniciar git localmente
+git init
+
+// Conectar o git ao heroku
+heroku git:remote -a <nomedoapp>
+
+// adicionar/Fazer update no heroku
 git add *
 git commit -m "A comment"
-git push master
+git push heroku master
 
 // abrir aplicação
 heroku open
 
-Links
-https://nodejs.org/en/docs/guides/getting-started-guide/
-https://docs.npmjs.com/getting-started/installing-node
-https://www.w3schools.com/nodejs/nodejs_npm.asp
-https://expressjs.com/en/starter/installing.html
-http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/
