@@ -7,4 +7,6 @@ Para Fazer:
 
 Corrigir o sistema de autenticação (Newuser e Login)
 
-Criar o Dashboard
+Passar os ids inseridos no dash para o app.js
+
+Terminar o dashboard
