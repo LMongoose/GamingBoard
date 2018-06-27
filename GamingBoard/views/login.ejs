@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style480.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)">
+		<link href="css/style720.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 720px)"/>
+		<link href="css/style1600.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 1600px)"/>
+		<link href="css/style1920.css" type="text/css" rel="stylesheet" media="only screen and (max-device-width: 1920px)"/>
+		<link href="css/fonts.css" type="text/css" rel="stylesheet">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/login.js" type="text/javascript"></script>
+		<title>GamingDash | Login</title>
+	</head>
+	<body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+		<div id="container" class="container">
+			<div class="form-box form-login">
+				<img src="img/logo.jpg" class="form-header">
+				<form id="form_login" action="/dash" method="post">
+					<label for="txtUsername" class="form-label">Usuário:</label><br>
+					<input type="text" class="form-field field-user" id="txtUsername" name="usr">
+					<br>
+					<label for="txtPassword" class="form-label">Senha:</label><br>
+					<input type="password" class="form-field field-pswd" id="txtPassword" name="pwd">
+					<br>
+					<input type="button" class="button button-modular" value="Criar Conta" onclick="window.location.href='newuser'">
+					<input type="submit" class="button" value="Entrar">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
