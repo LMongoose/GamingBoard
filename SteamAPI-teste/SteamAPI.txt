@@ -1,7 +1,0 @@
-Key: 95E0B94D7BAE2D74B032FCA88F5E286A
-
-SteamID Converter
-http://steamid.co/
-
-https://www.npmjs.com/package/steam-api
-https://www.npmjs.com/package/steamapi
