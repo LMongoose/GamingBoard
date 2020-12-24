@@ -1,5 +1,0 @@
-https://nodejs.org/en/docs/guides/getting-started-guide/
-https://docs.npmjs.com/getting-started/installing-node
-https://www.w3schools.com/nodejs/nodejs_npm.asp
-https://expressjs.com/en/starter/installing.html
-http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/
