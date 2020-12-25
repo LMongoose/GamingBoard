@@ -6,7 +6,7 @@ var mongoose = require("mongoose");
 var app = express();
 
 var SteamAPI = require("steamapi");
-const apikey = "95E0B94D7BAE2D74B032FCA88F5E286A"
+const apikey = ""
 const steam = new SteamAPI(apikey);
 
 //TODO: pegar dos textfields do dash
